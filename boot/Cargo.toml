@@ -1,0 +1,9 @@
+[package]
+name = "rolnix-boot"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+description = "rolnix QEMU boot harness: multiboot v1 -> long mode -> pmm_init self-test"
+
+[dependencies]
+rolnix-kernel = { path = "../kernel" }

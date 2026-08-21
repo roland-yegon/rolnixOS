@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = ["kernel", "boot"]
+default-members = ["kernel"]
+
+# The boot binary is no_std with no unwinding support; abort in dev too.
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+opt-level = 2
+lto = true
+codegen-units = 1

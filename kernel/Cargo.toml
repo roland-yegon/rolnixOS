@@ -1,0 +1,8 @@
+[package]
+name = "rolnix-kernel"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+description = "rolnix microkernel: physical memory manager (long-mode boot stage)"
+
+[dependencies]
